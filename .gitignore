@@ -2,5 +2,4 @@ config.py
 *.csv
 *.pyc
 .idea/
-*.bat
 send_email.py
