@@ -75,7 +75,7 @@ def manipulate_csv():
 
     for line in reader(open(os.path.join(current_path, get_attachment.BASEFILE), "r"), delimiter=","):
         try:
-            if int(line[0]) > 3 and line[0].find(",") != -1:
+            if len(line) > 3 and line[0].find(",") != -1:
 
                 for i in range(len(line)):
                     if isinstance(line[i],str) and ("|" in line[i]):

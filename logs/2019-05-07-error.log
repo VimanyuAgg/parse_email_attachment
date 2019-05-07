@@ -1,0 +1,12 @@
+2019-05-07 10:45:45,116 - get_attachment - ERROR - EXCEPTION OCCURED: 'NoneType' object has no attribute 'find'
+2019-05-07 10:45:45,117 - get_attachment - ERROR - Traceback (most recent call last):
+  File "/Users/vimanyua/PycharmProjects/skills_data/get_attachment.py", line 99, in save_attachment
+    if part.get('Content-Disposition').find(BASEFILE) == -1:
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2019-05-07 10:45:45,117 - get_attachment - ERROR - EXCEPTION OCCURED: 'NoneType' object has no attribute 'find'
+2019-05-07 10:45:45,117 - get_attachment - ERROR - Traceback (most recent call last):
+  File "/Users/vimanyua/PycharmProjects/skills_data/get_attachment.py", line 99, in save_attachment
+    if part.get('Content-Disposition').find(BASEFILE) == -1:
+AttributeError: 'NoneType' object has no attribute 'find'
+
