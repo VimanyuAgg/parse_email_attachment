@@ -1,0 +1,9 @@
+config.py
+logs/
+*.csv
+*.pyc
+cleaned_basefiles/
+print_logs/
+.idea/
+*.bat
+send_email.py
