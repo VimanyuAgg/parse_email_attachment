@@ -4,3 +4,4 @@ config.py
 .idea/
 send_email.py
 *.log
+
