@@ -1,11 +1,11 @@
-2019-05-07 20:52:50,522 - get_attachment - ERROR - EXCEPTION OCCURED: 'NoneType' object has no attribute 'find'
-2019-05-07 20:52:50,524 - get_attachment - ERROR - Traceback (most recent call last):
+2019-05-08 02:55:44,239 - get_attachment - ERROR - EXCEPTION OCCURED: 'NoneType' object has no attribute 'find'
+2019-05-08 02:55:44,242 - get_attachment - ERROR - Traceback (most recent call last):
   File "C:\Users\vimanyua\PycharmProjects\Pipeline\skills_data\get_attachment.py", line 99, in save_attachment
     if part.get('Content-Disposition').find(BASEFILE) == -1:
 AttributeError: 'NoneType' object has no attribute 'find'
 
-2019-05-07 20:52:50,525 - get_attachment - ERROR - EXCEPTION OCCURED: 'NoneType' object has no attribute 'find'
-2019-05-07 20:52:50,525 - get_attachment - ERROR - Traceback (most recent call last):
+2019-05-08 02:55:44,242 - get_attachment - ERROR - EXCEPTION OCCURED: 'NoneType' object has no attribute 'find'
+2019-05-08 02:55:44,243 - get_attachment - ERROR - Traceback (most recent call last):
   File "C:\Users\vimanyua\PycharmProjects\Pipeline\skills_data\get_attachment.py", line 99, in save_attachment
     if part.get('Content-Disposition').find(BASEFILE) == -1:
 AttributeError: 'NoneType' object has no attribute 'find'

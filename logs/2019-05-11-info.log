@@ -1,0 +1,24 @@
+2019-05-11 02:55:30,682 - send_email - INFO - Run started on 2019-05-11 02:55:30.682454
+2019-05-11 02:55:30,682 - send_email - INFO - *********************************
+2019-05-11 02:55:30,685 - __main__ - INFO - initiating put file in s3
+2019-05-11 02:55:30,686 - __main__ - INFO - 3.7.3 (default, Apr 24 2019, 15:29:51) [MSC v.1915 64 bit (AMD64)]
+2019-05-11 02:55:30,686 - __main__ - INFO - Calling get attachment module
+2019-05-11 02:55:30,686 - get_attachment - INFO - starting RAG Status report get attachment
+2019-05-11 02:55:30,686 - get_attachment - INFO - Connecting to outlook server
+2019-05-11 02:55:34,101 - get_attachment - INFO - Email connection established - Fetching emails
+2019-05-11 02:55:43,903 - get_attachment - INFO - Email Fetch Successful
+2019-05-11 02:55:43,908 - get_attachment - INFO - Unread len: 1
+2019-05-11 02:55:43,908 - get_attachment - INFO - type of object: <class 'email.message.Message'>
+2019-05-11 02:55:43,976 - get_attachment - INFO - C:\Users\vimanyua\PycharmProjects\Pipeline\skills_data\Skills_Data_vim_pipeline_report.csv
+2019-05-11 02:55:43,977 - get_attachment - INFO - all done - got attachment
+2019-05-11 02:55:44,015 - __main__ - INFO - get attachment module successfully called
+2019-05-11 02:55:44,015 - __main__ - INFO - calling csv manipulation
+2019-05-11 02:55:44,739 - __main__ - INFO - csv manipulation done
+2019-05-11 02:55:44,739 - __main__ - INFO - now creating boto3 resources
+2019-05-11 02:55:45,083 - __main__ - INFO - Opening data connections
+2019-05-11 02:55:45,084 - __main__ - INFO - Data file stream opened
+2019-05-11 02:55:45,084 - __main__ - INFO - Putting file in S3 bucket
+2019-05-11 02:55:50,972 - __main__ - INFO - File put in S3 bucket. All done - Pending S3 to hive transfer.
+2019-05-11 02:55:50,972 - send_email - INFO - to set
+2019-05-11 02:55:50,972 - send_email - INFO - subject and from set
+2019-05-11 02:55:50,972 - send_email - INFO - body set

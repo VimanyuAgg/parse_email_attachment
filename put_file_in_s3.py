@@ -7,6 +7,7 @@ import datetime
 import logging
 import traceback
 import send_email
+import sys
 
 today_date = str(datetime.datetime.now()).split(" ")[0]
 current_path = os.path.dirname(os.path.realpath(__file__))
@@ -34,6 +35,7 @@ logger.addHandler(error_handler)
 logger.addHandler(debug_handler)
 
 logger.info("initiating put file in s3")
+logger.info(sys.version)
 logger.info("Calling get attachment module")
 get_attachment.get_required_attachment()
 logger.info("get attachment module successfully called")

@@ -1,0 +1,33 @@
+2019-05-13 02:55:24,913 - __main__ - INFO - initiating put file in s3
+2019-05-13 02:55:24,913 - __main__ - INFO - 3.7.3 (default, Apr 24 2019, 15:29:51) [MSC v.1915 64 bit (AMD64)]
+2019-05-13 02:55:24,913 - __main__ - INFO - Calling get attachment module
+2019-05-13 02:55:24,913 - get_attachment - INFO - starting RAG Status report get attachment
+2019-05-13 02:55:24,914 - get_attachment - INFO - Connecting to outlook server
+2019-05-13 02:55:26,740 - get_attachment - INFO - Email connection established - Fetching emails
+2019-05-13 02:55:34,238 - get_attachment - INFO - Email Fetch Successful
+2019-05-13 02:55:34,242 - get_attachment - INFO - Unread len: 2
+2019-05-13 02:55:34,243 - get_attachment - INFO - type of object: <class 'email.message.Message'>
+2019-05-13 02:55:34,243 - get_attachment - ERROR - EXCEPTION OCCURED: 'NoneType' object has no attribute 'find'
+2019-05-13 02:55:34,245 - get_attachment - ERROR - Traceback (most recent call last):
+  File "C:\Users\vimanyua\PycharmProjects\Pipeline\skills_data\get_attachment.py", line 99, in save_attachment
+    if part.get('Content-Disposition').find(BASEFILE) == -1:
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2019-05-13 02:55:34,246 - get_attachment - INFO - None
+2019-05-13 02:55:34,246 - get_attachment - ERROR - EXCEPTION OCCURED: 'NoneType' object has no attribute 'find'
+2019-05-13 02:55:34,246 - get_attachment - ERROR - Traceback (most recent call last):
+  File "C:\Users\vimanyua\PycharmProjects\Pipeline\skills_data\get_attachment.py", line 99, in save_attachment
+    if part.get('Content-Disposition').find(BASEFILE) == -1:
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2019-05-13 02:55:34,247 - get_attachment - INFO - type of object: <class 'email.message.Message'>
+2019-05-13 02:55:34,335 - get_attachment - INFO - C:\Users\vimanyua\PycharmProjects\Pipeline\skills_data\Skills_Data_vim_pipeline_report.csv
+2019-05-13 02:55:34,336 - get_attachment - INFO - all done - got attachment
+2019-05-13 02:55:34,351 - __main__ - INFO - get attachment module successfully called
+2019-05-13 02:55:34,351 - __main__ - INFO - calling csv manipulation
+2019-05-13 02:55:35,034 - __main__ - INFO - csv manipulation done
+2019-05-13 02:55:35,034 - __main__ - INFO - now creating boto3 resources
+2019-05-13 02:55:35,256 - __main__ - INFO - Opening data connections
+2019-05-13 02:55:35,257 - __main__ - INFO - Data file stream opened
+2019-05-13 02:55:35,257 - __main__ - INFO - Putting file in S3 bucket
+2019-05-13 02:55:39,150 - __main__ - INFO - File put in S3 bucket. All done - Pending S3 to hive transfer.

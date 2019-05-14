@@ -1,0 +1,38 @@
+2019-05-12 02:55:24,825 - send_email - INFO - Run started on 2019-05-12 02:55:24.825031
+2019-05-12 02:55:24,825 - send_email - INFO - *********************************
+2019-05-12 02:55:24,827 - __main__ - INFO - initiating put file in s3
+2019-05-12 02:55:24,827 - __main__ - INFO - 3.7.3 (default, Apr 24 2019, 15:29:51) [MSC v.1915 64 bit (AMD64)]
+2019-05-12 02:55:24,827 - __main__ - INFO - Calling get attachment module
+2019-05-12 02:55:24,828 - get_attachment - INFO - starting RAG Status report get attachment
+2019-05-12 02:55:24,828 - get_attachment - INFO - Connecting to outlook server
+2019-05-12 02:55:26,466 - get_attachment - INFO - Email connection established - Fetching emails
+2019-05-12 02:55:35,745 - get_attachment - INFO - Email Fetch Successful
+2019-05-12 02:55:35,749 - get_attachment - INFO - Unread len: 2
+2019-05-12 02:55:35,749 - get_attachment - INFO - type of object: <class 'email.message.Message'>
+2019-05-12 02:55:35,749 - get_attachment - ERROR - EXCEPTION OCCURED: 'NoneType' object has no attribute 'find'
+2019-05-12 02:55:35,761 - get_attachment - ERROR - Traceback (most recent call last):
+  File "C:\Users\vimanyua\PycharmProjects\Pipeline\skills_data\get_attachment.py", line 99, in save_attachment
+    if part.get('Content-Disposition').find(BASEFILE) == -1:
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2019-05-12 02:55:35,762 - get_attachment - INFO - None
+2019-05-12 02:55:35,762 - get_attachment - ERROR - EXCEPTION OCCURED: 'NoneType' object has no attribute 'find'
+2019-05-12 02:55:35,762 - get_attachment - ERROR - Traceback (most recent call last):
+  File "C:\Users\vimanyua\PycharmProjects\Pipeline\skills_data\get_attachment.py", line 99, in save_attachment
+    if part.get('Content-Disposition').find(BASEFILE) == -1:
+AttributeError: 'NoneType' object has no attribute 'find'
+
+2019-05-12 02:55:35,775 - get_attachment - INFO - type of object: <class 'email.message.Message'>
+2019-05-12 02:55:35,861 - get_attachment - INFO - C:\Users\vimanyua\PycharmProjects\Pipeline\skills_data\Skills_Data_vim_pipeline_report.csv
+2019-05-12 02:55:35,862 - get_attachment - INFO - all done - got attachment
+2019-05-12 02:55:35,865 - __main__ - INFO - get attachment module successfully called
+2019-05-12 02:55:35,867 - __main__ - INFO - calling csv manipulation
+2019-05-12 02:55:36,525 - __main__ - INFO - csv manipulation done
+2019-05-12 02:55:36,525 - __main__ - INFO - now creating boto3 resources
+2019-05-12 02:55:37,315 - __main__ - INFO - Opening data connections
+2019-05-12 02:55:37,316 - __main__ - INFO - Data file stream opened
+2019-05-12 02:55:37,317 - __main__ - INFO - Putting file in S3 bucket
+2019-05-12 02:55:44,967 - __main__ - INFO - File put in S3 bucket. All done - Pending S3 to hive transfer.
+2019-05-12 02:55:44,968 - send_email - INFO - to set
+2019-05-12 02:55:44,968 - send_email - INFO - subject and from set
+2019-05-12 02:55:44,968 - send_email - INFO - body set
