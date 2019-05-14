@@ -24,11 +24,17 @@ elif current_month <= 9:
 elif current_month <= 12:
     current_quarter = '04'
 
+if sys.argv[1] == 'skills':
+    SUBJECT = 'Scheduled report: Skills_Data_vim_pipeline'
+    BASEFILE = 'Skills_Data_vim_pipeline_report.csv'
+    SUBKEY = 'skills_data'
+    FINAL_CSV = "skills_data_cleaned_{}.csv".format(today_date)
 
-SUBJECT = 'Scheduled report: Skills_Data_vim_pipeline'
-BASEFILE = 'Skills_Data_vim_pipeline_report.csv'
-SUBKEY = 'skills_data'
-FINAL_CSV = "skills_data_cleaned_{}.csv".format(today_date)
+elif sys.argv[1] == "user_demographic":
+    SUBJECT = 'Scheduled report: User Demographics PS Consultants v1_vim_pipeline'
+    BASEFILE = 'User_Demographics_PS_Consultants_v1_vim_pipeline_report.csv'
+    SUBKEY = 'user_demographic'
+    FINAL_CSV = "user_demographic_data_cleaned_{}.csv".format(today_date)
 
 # if sys.argv[1] == 'finance':
 #
